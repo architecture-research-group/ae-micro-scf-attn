@@ -1,0 +1,13 @@
+/venv
+.env
+*.pyc
+src/cu-popcount
+masks/*
+
+experiments/
+scripts/
+*.csv
+*.log
+*.out
+
+*.pt

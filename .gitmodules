@@ -1,0 +1,3 @@
+[submodule "ExpKit"]
+	path = ExpKit
+	url = git@github.com:derrickquinn/ExpKit.git
