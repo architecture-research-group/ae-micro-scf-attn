@@ -1,9 +1,9 @@
 # LongSight: Compute-Enabled Memory to Accelerate Large-Context LLMs via Sparse Attention
 
-This repository provides an software implementation of a sparse attention algorithm for **LongSight**, an algorithm-hardware co-design framework for sparse attention in large-context transformer-based language models. By leveraging Compute-Enabled Memory (CEM) alongside token filtering techniques, LongSight efficiently scales the context window up to 1 million tokens on modern hardware.
+This repository provides a software implementation of a sparse attention algorithm for **LongSight**, an algorithm-hardware co-design framework for sparse attention in large-context transformer-based language models. By leveraging Compute-Enabled Memory (CEM) alongside token filtering techniques, LongSight efficiently scales the context window up to 1 million tokens on modern hardware.
 
 ## Key Components
-- **Sparse Attention Module**: Implements `L3_Sparse_Attn` and `L3KSparseDotProd` for to model sparse attention with a combination of top-k selection and sign-based filters.
+- **Sparse Attention Module**: Implements `L3_Sparse_Attn` and `L3KSparseDotProd` to model sparse attention with a combination of top-k selection and sign-based filters.
 - **Iterative Quantization (ITQ)**: Provides `L3ITQ` and utilities for training per-head rotation matrices to improve sign-based filtering performance.
 - **KSparseModel Wrapper**: Extends `transformers.AutoModelForCausalLM` to inject sparse attention layers into Llama 3 models via the `KSparseModel` interface.
 - **Example Scripts**:
