@@ -1,13 +1,16 @@
 /venv
 .env
 *.pyc
-src/cu-popcount
-masks/*
 
 experiments/
 scripts/
 *.csv
 *.log
 *.out
+*.so
+*.o
+*.egg-info/
+*build
+*dist
 
 *.pt
